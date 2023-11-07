@@ -1,0 +1,11 @@
+<nav>
+    <ul style="display: flex; gap: 1rem; list-style: none; text-decoration: none;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <% if(!isAuthenticated) { %>
+        <li><a href="/login/">Login</a></li>
+        <% } else { %>
+        <li><a href="/logout/">Logout</a></li>
+        <%} %>
+    </ul>
+</nav>
