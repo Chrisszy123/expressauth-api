@@ -24,5 +24,5 @@ app.use(auth(config))
 app.use('/', indexRouter)
 
 app.listen(3000, () => {
-    console.log('app is listening on port 3000')
+    console.log('app is listening on PORT 3000')
 })
